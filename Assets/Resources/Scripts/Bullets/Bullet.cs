@@ -25,11 +25,11 @@ public class Bullet : MonoBehaviour , IPoolable
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision)
+        if(collision.tag.Equals("Wall"))
         {
 
             DestroyBullet();
-            Debug.Log("Hello");
+           
         }
        
  
@@ -44,14 +44,14 @@ public class Bullet : MonoBehaviour , IPoolable
 
     public void Pooled()
     {
-       
-        transform.position = GoInRandomDirection();
+        transform.position = new Vector2(0, 0);
+       // transform.position = GoInRandomDirection();
     }
 
     public void DePooled()
     {
-     //   transform.position = new Vector2(0, 0);
-       
+         transform.position = GoInRandomDirection();
+        //Debug.Log("Depooled");
     }
 
     [System.Serializable]

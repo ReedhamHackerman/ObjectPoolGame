@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7709968651697102474}
   - component: {fileID: 2707222245841419826}
   - component: {fileID: -6312851967849429425}
-  - component: {fileID: -6779447072838143900}
   - component: {fileID: 5750188903616674269}
+  - component: {fileID: 4012495612660892072}
   m_Layer: 0
   m_Name: BlackBullet
   m_TagString: Untagged
@@ -106,23 +106,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-6779447072838143900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7993420725012142274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff3c8a4f488df8a46b00ac85f49f9540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bi:
-    rb: {fileID: -6312851967849429425}
-    forceOfTheBullet: 12
-    sizeOfBullet: 1
-    spriteName: BlackBullet
 --- !u!58 &5750188903616674269
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -139,3 +122,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &4012495612660892072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993420725012142274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c3b7975ebf2c54da180be485ebb15d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bi:
+    rb: {fileID: -6312851967849429425}
+    forceOfTheBullet: 6
+    sizeOfBullet: 4
+    spriteName: BlackBullet
